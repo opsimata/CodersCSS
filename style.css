@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Preserva as dimensões de uma box */
+    box-sizing: border-box;
+    /* Preserva as dimensões de uma box */
 }
 
 :root {
@@ -13,10 +14,14 @@ body {
     font-size: 1.8rem;
 }
 
+main{
+    padding-top: 7rem;
+}
+
 table,
 td,
 th {
-    border: 1px solid black;
+    border: .1rem solid black;
 }
 
 table tr:first-child {
@@ -32,7 +37,7 @@ table {
     font-size: 2.4rem;
     /* border-collapse: separate; | padrão */
     border-collapse: collapse;
-    border: 2px solid black;
+    border: .2rem solid black;
 }
 
 h1 {
@@ -44,12 +49,7 @@ h1 {
     text-align: center;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -65,7 +65,7 @@ p {
 
 a {
     font-size: 2.4rem;
-    color: red;
+    color: #000033;
 }
 
 a:visited {
@@ -73,7 +73,7 @@ a:visited {
 }
 
 a:hover {
-    color: coral;
+    color: #f8c300;
 }
 
 .bg {
@@ -101,18 +101,51 @@ ol {
     list-style: upper-roman;
 }
 
+nav.menu {
+    position: fixed;
+    background-color: #93754f;
+    width: 100vw;
+    height: 7rem;
+    z-index: 1;
+}
+
+.contact-list h2{
+    top: 7rem;
+    position: sticky;
+    background-color: #0d80bf;
+}
+
+.boxes {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box + span {
+    display: none;
+}
+
 .box {
+    flex: 30%;
     color: #fff;
     height: 10rem;
     width: 20rem;
     margin: 1.5rem;
     padding: 1.5rem;
-    background-color: rgb(0, 132, 255);
+    background-color: #0d80bf;
     border: 1rem solid black;
     /* display: block; | Padrão */
     display: inline-block;
     border-radius: .4rem;
+    position: static;
+    /* Padrão */
 }
+
+.box + span {
+    clear: both;
+}
+
+.boxes p {}
 
 img {
     /* display: inline; | Padrão */
