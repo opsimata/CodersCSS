@@ -3,11 +3,11 @@
     padding: 0;
 }
 
-:root{
+:root {
     font-size: 62.5%;
 }
 
-body{
+body {
     font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
 }
 
@@ -33,11 +33,11 @@ h2 {
     font: 3.2rem;
 }
 
-.novo-em{
+.novo-em {
     font-size: 3.2rem;
 }
 
-.novo-em{
+.novo-em {
     font-size: 300%;
 }
 
@@ -45,6 +45,19 @@ p {
     font-size: 1.8rem;
     text-align: justify;
     text-indent: 9rem;
+}
+
+a {
+    font-size: 2.4rem;
+    color: red;
+}
+
+a:visited {
+    color: darkgreen;
+}
+
+a:hover{
+    color: coral;
 }
 
 .bg {
