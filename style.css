@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Preserva as dimensões de uma box */
 }
 
 :root {
@@ -8,11 +9,34 @@
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+    font-family: 'Times New Roman';
+    font-size: 1.8rem;
+}
+
+table,
+td,
+th {
+    border: 1px solid black;
+}
+
+table tr:first-child {
+    background-color: steelblue;
+    color: #fff;
+}
+
+table tr:nth-child(2n + 3) {
+    background-color: #c0c0c0;
+}
+
+table {
+    font-size: 2.4rem;
+    /* border-collapse: separate; | padrão */
+    border-collapse: collapse;
+    border: 2px solid black;
 }
 
 h1 {
-    color: blueviolet;
+    color: black;
     font-size: 9.6rem;
     font-weight: 900;
     font-style: oblique;
@@ -33,14 +57,6 @@ h2 {
     font: 3.2rem;
 }
 
-.novo-em {
-    font-size: 3.2rem;
-}
-
-.novo-em {
-    font-size: 300%;
-}
-
 p {
     font-size: 1.8rem;
     text-align: justify;
@@ -56,7 +72,7 @@ a:visited {
     color: darkgreen;
 }
 
-a:hover{
+a:hover {
     color: coral;
 }
 
@@ -69,4 +85,36 @@ a:hover{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+}
+
+ul,
+ol {
+    padding-left: 3.2rem;
+}
+
+ul {
+    list-style: square;
+}
+
+ol {
+    /* list-style: decimal-leading-zero; */
+    list-style: upper-roman;
+}
+
+.box {
+    color: #fff;
+    height: 10rem;
+    width: 20rem;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background-color: rgb(0, 132, 255);
+    border: 1rem solid black;
+    /* display: block; | Padrão */
+    display: inline-block;
+    border-radius: .4rem;
+}
+
+img {
+    /* display: inline; | Padrão */
+    height: 10rem;
 }
