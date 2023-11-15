@@ -1,0 +1,32 @@
+.box{
+    /* padding: 1.5rem; */
+    border: 1rem solid black;
+    border-radius: .4rem;
+    background-color: #0d80bf;
+    color: #fff;
+    font-size: 4rem;
+
+    flex: 1;
+
+    display: flex;
+    gap: 0 2rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.box p, button{
+    font-size: 4rem;
+}
+
+.boxes{
+    height: calc(100vh);
+    position: relative;
+
+    display: grid;
+    justify-content: flex-start;
+    gap: 1rem 5rem;
+
+    /* grid-template-columns: 3fr 1fr 1fr; */
+    grid-template-columns: 3fr repeat(4, 1fr);
+    /* grid-template-rows: minmax(20rem, 1fr) 2fr; */
+}
